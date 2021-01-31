@@ -2,9 +2,9 @@
  This examples lives at peril99@github:castle-anthrax/TagoWifiPool/TagoWifiPool.ino it is an integration of the atlas 
  ezo_i2c library as well s as a generic https post example against an iot platform like tago. While atlas has their own 
  thingspeak intergration with the mathworks platform, wanted to use a (sorta) more easy to understand iot provider which 
- makes presentation and affecting better split across components.
+ makes presentation and affecting better split across components and iot providers.
 
- This is a commit that was long overdue, this has been running production against my pool setup for about 6 months, 
+ This is a commit that was long overdue, this has been running production against my pool setup for >6  months, 
  and working to integrate this into a dosing sidecar affector which will be triggered based on ph > 7.5 until it is 
  7.2, and the orp will be made to hover right >=  600 via chlorine injection and dosing.
 
@@ -12,8 +12,14 @@
  SW: 
     base: 
       orig: https://github.com/Atlas-Scientific/Ezo_I2c_lib/blob/master/Examples/pool_kit/pool_kit.ino
-      new: 
-    deps: 
+      new: https://github.com/peril99/castle-anthrax/tree/master/TagoWifiPool/TagoWifiPool.ino
+    deps: (put into arduino/libraries location and then #include in the project)
+      upstream:
+        ezo_i2c -> https://github.com/Atlas-Scientific/Ezo_I2c_lib (pinned version @ https://github.com/peril99/Ezo_I2c_lib)
+        esp8266  -> https://github.com/electronicsguy/ESP8266 (pinned version @ https://github.com/peril99/ESP8266)
+        other #includes are common.
+        
+Thanks: electronicsguy, atlas-scientific and thingsspeak
       
  Adrian Terranova
  @gmail.com
