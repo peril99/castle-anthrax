@@ -1,4 +1,6 @@
 /*
+ an example of this working is @ http://bit.ly/texaspool
+
  This examples lives at peril99@github:castle-anthrax/TagoWifiPool/TagoWifiPool.ino it is an integration of the atlas 
  ezo_i2c library as well s as a generic https post example against an iot platform like tago. While atlas has their own 
  thingspeak intergration with the mathworks platform, wanted to use a (sorta) more easy to understand iot provider which 
