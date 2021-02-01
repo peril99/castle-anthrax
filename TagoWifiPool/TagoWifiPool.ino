@@ -18,7 +18,7 @@
     deps: (put into arduino/libraries location and then #include in the project)
       upstream:
         ezo_i2c -> https://github.com/Atlas-Scientific/Ezo_I2c_lib (pinned version @ https://github.com/peril99/Ezo_I2c_lib)
-        esp8266  -> https://github.com/electronicsguy/ESP8266 (pinned version @ https://github.com/peril99/ESP8266)
+        httpsredirect  -> https://github.com/electronicsguy/ESP8266 (pinned version @ https://github.com/peril99/ESP8266)
         other #includes are common.
         
 Thanks: electronicsguy, atlas-scientific and thingsspeak
